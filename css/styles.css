@@ -1,0 +1,183 @@
+body {
+	font-size: 14px;
+	color: #000;
+	background-color: #b19cd9;
+	font-family: 'Oxygen', sans-serif;
+	margin: 0 20px 20px 20px;
+}
+
+/** HEADER**/
+#header-nav {
+	background-color: #aec6ef;
+	border-radius: 0;
+	border: 1px solid black;
+	margin-right: -20px;
+	margin-left: -20px;
+}
+
+.navbar-brand {
+	padding-top: 25px;
+}
+
+.navbar-brand h1 { /*Restaurant name */
+	font-family: Arial;
+	color: #000;
+	font-size: 1.5em;
+	font-weight: bolder;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.navbar-brand a:hover, .navbar-brand a:focus {
+	text-decoration: none;
+}
+
+#nav-list {
+	margin-top: 10px;
+}
+
+#nav-list a {
+	color: #000;
+	text-align: center;
+}
+
+#nav-list a:hover {
+	background: #b19cd9;
+}
+
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+	border: 1px solid #61122f;
+}
+
+.navbar-header button.navbar-toggle {
+	margin-top: 20px;
+}
+
+/* END HEADER */
+
+/* main content */
+
+#home-tiles div {
+	background-color: #aec6ef;
+	height: auto;
+	padding-right: 20px;
+	padding-left: 20px;
+	padding-bottom: 20px;
+}
+
+#menu-categories-title {
+	font-size: 1.75em;
+	font-weight: bold;
+	margin-bottom: 50px;
+}
+
+#menu-category h3 {
+	padding-top: 5px;
+	font-size: 1.25em;
+	padding-bottom: 10px;
+	font-weight: bold;
+	margin: 0;
+}
+
+
+/* END MAIN CONTENT */ 
+
+
+/********DESKTOP*********/
+@media (min-width: 992px) {
+	#nav-list {
+		display: none;
+	}
+
+	#header-nav {
+		height: 80px;
+	}
+
+	#home-tiles div {
+		margin-right: 10px;
+		margin-left: 10px;
+		margin-bottom: 20px;
+		width: 30%;
+	}
+
+	#home-tiles section {
+		margin-right: 10px;
+		margin-left: 10px;
+		margin-bottom: 20px;
+		background-color: #aec6ef;
+		height: auto;
+		padding-right: 20px;
+		padding-left: 20px;
+		padding-bottom: 20px;
+	}
+}
+
+/******TABLET***********/
+@media (min-width: 768px) and (max-width: 991px) {
+	#nav-list {
+		display: none;
+	}
+
+	#header-nav {
+		height: 80px;
+	}
+
+	#home-tiles div {
+		margin-right: 10px;
+		margin-left: 10px;
+		margin-bottom: 20px;
+		width: 47%;
+	}
+
+	#home-tiles section {
+		margin-right: 10px;
+		margin-left: 10px;
+		margin-bottom: 20px;
+		width: 96.6%;
+		background-color: #aec6ef;
+		height: auto;
+		padding-right: 20px;
+		padding-left: 20px;
+	}
+}
+
+/*********MOBILE********/
+@media (max-width: 767px) {
+	
+	body {
+		margin-right: 50px;
+		margin-left: 50px;
+	}
+
+	#header-nav {
+		margin-right: -50px;
+		margin-left: -50px;
+}
+
+	/* HEADER */
+
+	.navbar-brand h1 { /*Restaurant name*/
+		padding-top: 10px;
+		
+	}
+
+	.navbar-brand {
+		padding-top: 10px;
+		height: 80px;
+	}
+	
+	#home-tiles div {
+		margin-bottom: 20px;
+	}
+
+	#home-tiles section {
+		margin-bottom: 20px;
+		background-color: #aec6ef;
+		height: auto;
+		padding-right: 20px;
+		padding-left: 20px;
+		padding-bottom: 20px;
+	}
+
+	/* END HEADER */
+}
